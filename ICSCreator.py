@@ -37,7 +37,7 @@ for event in events:
     e = Event(name=event["name"], begin=event_start, end=event_end)
     calendar.events.add(e)
 
-# Save the calendar to a file and overwrite old file.
+# Save the calendar to a file and overwrite old file(s).
 file_path = "Squash_Week_Schedule.ics"
 with open(file_path, "w") as f:
     f.writelines(calendar)
